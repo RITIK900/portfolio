@@ -12,38 +12,97 @@
     />
 
     <style>
-        .color_a{
-            color: black;
-        }
+      .color_a {
+        color: black;
+        font-weight: 400;
+      }
+      .color_a:hover {
+        font-size: larger;
+        color: rgb(14, 0, 75);
+        font-weight: 600;
+      }
+      .dv {
+        margin-top: 10px;
+        height: 400px;
+        border: 2px solid rgb(70, 61, 61);
+        border-radius: 10px;
+        margin-left: 5px;
+      }
+      .dv:hover {
+        border: 2px solid #888888;
+        box-shadow: 4px 5px #888888;
+      }
+      .im {
+        margin-top: 10px;
+        border-radius: 10px;
+      }
     </style>
   </head>
   <body>
-     
     <!-- Header Section -->
 
     <header>
-        <nav>
-        <ul class="nav justify-content-center text-dark" style="background-color: #dde2e6;">
-            <li class="nav-item">
-                <a class="nav-link active color_a" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color_a" href="/skill.html">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color_a" href="/project.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color_a" href="/achievement.html">Achievements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color_a" href="/profile.html">Other Profiles</a>
-              </li>
-          </ul>
-        </nav>
+      <nav>
+        <ul
+          class="nav justify-content-center text-dark"
+          style="background-color: #dde2e6"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active color_a"
+              aria-current="page"
+              href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color_a" href="/skill.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color_a" href="/project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color_a" href="/achievement.html"
+              >Achievements</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color_a" href="/profile.html">Other Profiles</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <hr />
+    <section>
+      <!-- <img src="/bg.jpg" alt="Background-Image" width="100%" height="auto" style="display: block;"> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm dv">
+            <img
+              src="https://dummyimage.com/350x300/000/ff0000&text=Console+Based+Application"
+              alt=""
+              width="350px"
+              class="im"
+            />
 
+            
+            
+            <div class="grid text-center">
+                <div class="g-col"><button type="button" class="btn btn-success">Success</button></div>
+                <div class="g-col"><button type="button" class="btn btn-danger">Danger</button></div>
+              </div>
 
+          </div>
+          <div class="col-sm dv">col-sm</div>
+          <div class="col-sm dv">col-sm</div>
+        </div>
 
+        <div class="row">
+          <div class="col-sm dv">col-sm</div>
+          <div class="col-sm dv">col-sm</div>
+          <div class="col-sm dv">col-sm</div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
